@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="libraryApp">
+<head>
+	<meta charset="utf-8">
+	<title>Online Library</title>
+	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.min.css">
+	<!--<link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
+	<!--<link href="vendor/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">-->
+	<!--<link href="css/main.css" rel="stylesheet">-->
+
+</head>
+<body>
+	<top-menu></top-menu>
+	<div ng-view class="container">
+	</div>
+	<script src="vendor/angular/angular.min.js"></script>
+	<script src="vendor/angular-route/angular-route.js"></script>
+	<script src="app.module.js"></script>
+	<script src="app.config.js"></script>
+	<script src="core/core.module.js"></script>
+	<script src="top-menu/top-menu.module.js"></script>
+	<script src="top-menu/top-menu.component.js"></script>
+</body>
+</html>

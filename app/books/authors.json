@@ -1,0 +1,57 @@
+[
+  {
+    "id": "joanne_rowling",
+    "name": "Джоан Роулинг",
+    "rating": 100500
+  },
+  {
+    "id": "george_martin",
+    "name": "Джордж Мартин",
+    "rating": 100
+  },
+  {
+    "id": "boris_akunin",
+    "name": "Борис Акунин",
+    "rating": 78
+  },
+  {
+    "id": "haruki_murakami",
+    "name": "Харуки Мураками",
+    "rating": 89
+  },
+  {
+    "id": "terence_pratchett",
+    "name": "Терри Пратчетт",
+    "rating": 250
+  },
+  {
+    "id": "max_fry",
+    "name": "Макс Фрай",
+    "rating": 46
+  },
+  {
+    "id": "stieg_larsson",
+    "name": "Стиг Ларссон",
+    "rating": 600
+  },
+  {
+    "id": "stieg_larsson",
+    "name": "Стиг Ларссон",
+    "rating": 49
+  },
+  {
+    "id": "yanush_vishnevsky",
+    "name": "Януш Вишневский",
+    "rating": 40
+  },
+  {
+    "id": "dan_brown",
+    "name": "Дэн Браун",
+    "rating": 57
+  },
+  {
+    "id": "francis_fitzgerald",
+    "name": "Фрэнсис Скотт Фицджеральд",
+    "rating": 500
+  }
+]

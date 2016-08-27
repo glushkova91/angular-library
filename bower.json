@@ -1,0 +1,25 @@
+{
+  "name": "library",
+  "version": "0.0.1",
+  "description": "library",
+  "authors": [
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.8",
+    "angular-animate": "1.5.x",
+    "angular-mocks": "1.5.x",
+    "angular-resource": "1.5.x",
+    "angular-route": "1.5.x",
+    "bootstrap": "~3.3.5"
+    
+  }
+}
