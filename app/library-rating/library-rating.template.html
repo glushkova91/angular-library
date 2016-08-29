@@ -1,0 +1,18 @@
+
+<div class="rating">
+    <div class="rating__title">Best 10 Books & Authors</div>
+    <div class="rating__container clearfix">
+        <div class="rating__books">
+            <div class="rating__subtitle">Book's rating</div>
+            <ul>
+                <li ng-repeat="item in $ctrl.items">
+                    <a ng-href="{{item.src}}">{{item.name}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rating__authors">
+            <div class="rating__subtitle">Author's rating</div>
+        </div>
+    </div>
+</div>
+

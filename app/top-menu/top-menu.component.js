@@ -10,11 +10,11 @@ angular
         this.items = [
            {
                name: 'Top',
-               src: '/top'
+               src: '#/top'
            },
            {
                name: 'Search',
-               src: '/search'
+               src: '#/search'
            }
         ];
     }

@@ -18,7 +18,6 @@
 	"noarg": true,
 	"nonew": true,
 	"plusplus": false,
-	"quotmark": "double",
 	"undef": false,
 	"unused": false,
 	"strict": false,

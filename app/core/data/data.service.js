@@ -1,15 +1,20 @@
 'use strict';
 
 angular
-    .module('core.authors')
+    .module('core.data')
     .factory('HttpData', ['$resource',
     function($resource) {
-        return $resource('phones/:phoneId.json', {}, {
-            query: {
-                method: 'GET',
-                params: {phoneId: 'phones'},
-                isArray: true
-            }
-        });
+        return {
+            getBooksData,
+            getAuthorsData
+        };
+        function getBooksData(success, error){
+            return $resource('data/books.json', null, {
+                query: {method: 'get', isArray: true}
+            });
+        }
+        function getAuthorsData(){
+            return $resource('data/authors.json', {}).get({}, success, error);
+        }
     }
 ]);

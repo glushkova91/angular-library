@@ -48,9 +48,9 @@ gulp.task("babel", function() {
 		.pipe(gulp.dest('build'));
 });
 
-gulp.task("html", function() {
+gulp.task("not-compiled", function() {
 	return gulp
-		.src('app/**/*.html')
+		.src('app/**/*.{html,json,img}')
 		.pipe(gulp.dest('build'));
 });
 
@@ -62,5 +62,5 @@ gulp.task('less', function () {
 		.pipe(gulp.dest('build'));
 });
 
-gulp.task("build", ["babel", "html", 'less']);
-gulp.task("start", ["webserver", 'watch', 'build']);
+gulp.task("build", ["babel", "not-compiled", 'less']);
+gulp.task("start", ['build', "webserver", 'watch']);

@@ -1,6 +1,8 @@
 'use strict';
 
 angular.module('libraryApp', [
+    'core',
     'ngRoute',
-    'topMenu'
+    'topMenu',
+    'libraryRating'
 ]);
