@@ -1,57 +1,52 @@
 [
   {
     "id": "joanne_rowling",
-    "name": "Джоан Роулинг",
+    "name": "Joanne Rowling",
     "rating": 100500
   },
   {
     "id": "george_martin",
-    "name": "Джордж Мартин",
+    "name": "George Raymond Richard Martin",
     "rating": 100
   },
   {
     "id": "boris_akunin",
-    "name": "Борис Акунин",
+    "name": "Boris Akunin",
     "rating": 78
   },
   {
     "id": "haruki_murakami",
-    "name": "Харуки Мураками",
+    "name": "Haruki Murakami",
     "rating": 89
   },
   {
     "id": "terence_pratchett",
-    "name": "Терри Пратчетт",
+    "name": "Terry Pratchett",
     "rating": 250
   },
   {
-    "id": "max_fry",
-    "name": "Макс Фрай",
+    "id": "max_frei",
+    "name": "Max Frei",
     "rating": 46
   },
   {
     "id": "stieg_larsson",
-    "name": "Стиг Ларссон",
+    "name": "Stieg Larsson",
     "rating": 600
   },
   {
-    "id": "stieg_larsson",
-    "name": "Стиг Ларссон",
-    "rating": 49
-  },
-  {
-    "id": "yanush_vishnevsky",
-    "name": "Януш Вишневский",
+    "id": "janusz_wiśniewski",
+    "name": "Janusz Wiśniewski",
     "rating": 40
   },
   {
     "id": "dan_brown",
-    "name": "Дэн Браун",
+    "name": "Dan Brown",
     "rating": 57
   },
   {
     "id": "francis_fitzgerald",
-    "name": "Фрэнсис Скотт Фицджеральд",
+    "name": "Francis Scott Key Fitzgerald",
     "rating": 500
   }
 ]

@@ -5,13 +5,18 @@
         <div class="rating__books">
             <div class="rating__subtitle">Book's rating</div>
             <ul>
-                <li ng-repeat="item in $ctrl.items">
-                    <a ng-href="{{item.src}}">{{item.name}}</a>
+                <li ng-repeat="book in $ctrl.books">
+                    <a ng-href="#/{{book.id}}">{{book.name}}</a>
                 </li>
             </ul>
         </div>
         <div class="rating__authors">
             <div class="rating__subtitle">Author's rating</div>
+            <ul>
+                <li ng-repeat="author in $ctrl.authors">
+                    <span>{{author.name}}</span>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

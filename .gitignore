@@ -4,3 +4,6 @@ node_modules/
 tmp
 .idea/
 bower_components/
+
+# IDEs and editors
+/.idea

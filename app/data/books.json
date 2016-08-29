@@ -1,68 +1,90 @@
 [
   {
     "id": "harry_potter",
-    "name": "Гарри Поттер",
+    "name": "Harry Potter",
     "rating": 5000,
-    "preview": "Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry."
+    "preview": "Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry.",
+    "author": "J. K. Rowling",
+    "year": 1997
   },
   {
     "id": "gone_with_the_wind",
-    "name": "Унесенные ветром",
+    "name": "Gone with the Wind",
     "rating": 500,
-    "preview": "роман американской писательницы Маргарет Митчелл, события которого происходят в южных штатах США в 1860-х годах, во время (и после) гражданской войны."
+    "preview": "Gone with the Wind is a novel written by Margaret Mitchell, first published in 1936. The story is set in Clayton County and Atlanta, both in Georgia, during the American Civil War and Reconstruction Era. It depicts the struggles of young Scarlett O'Hara, the spoiled daughter of a well-to-do plantation owner, who must use every means at her disposal to claw her way out of poverty following the destructive Sherman's March to the Sea. This historical novel features a Bildungsroman or coming-of-age story, with the title taken from a poem written by Ernest Dowson.",
+    "author": "Margaret Mitchell",
+    "year": 1936
   },
   {
     "id": "le_comte_de_monte-cristo",
-    "name": "Граф Монте-Кристо",
+    "name": "Le Comte de Monte-Cristo",
     "rating": 600,
-    "preview": "приключенческий роман Александра Дюма, классика французской литературы, написанный в 1844—45 годах. Имя своему герою писатель придумал во время путешествия по Средиземному морю, когда он увидел остров Монтекристо и услышал легенду о зарытых там несметных сокровищах."
+    "preview": "est un roman dвЂ™Alexandre Dumas, Г©crit avec la collaboration dвЂ™Auguste Maquet et achevГ© en 1844. Il est partiellement inspirГ© de faits rГ©els, trГЁs lointainement empruntГ©s Г  la vie de Pierre Picaud.",
+    "author": "Alexandre Dumas",
+    "year": 1844
   },
   {
     "id": "the_green_mile",
-    "name": "Зелёная миля",
+    "name": "The Green Mile",
     "rating": 800,
-    "preview": "роман Стивена Кинга. В 1999 году по роману был снят одноимённый фильм."
+    "preview": "The Green Mile is a 1996 serial novel written by Stephen King. It tells the story of death row supervisor Paul Edgecombe's encounter with John Coffey, an unusual inmate who displays inexplicable healing and empathetic abilities. The serial novel was originally released in six volumes before being republished as a single volume work. The book is an example of magical realism.",
+    "author": "Stephen King",
+    "year": 1996
   },
   {
     "id": "the_godfather",
-    "name": "Крёстный отец",
+    "name": "The Godfather",
     "rating": 800,
-    "preview": "роман Марио Пьюзо, изданный в 1969 году и рассказывающий о жизни одного из могущественных мафиозных кланов Америки — семье дона Корлеоне. На русском языке впервые опубликован в журнале «Знамя» (1987, № 10, 11, 12; перевод Марии Кан и Александры Ильф)."
+    "preview": "The Godfather is a 1972 American crime film directed by Francis Ford Coppola and produced by Albert S. Ruddy, based on Mario Puzo's best-selling novel of the same name. It stars Marlon Brando and Al Pacino as the leaders of a fictional New York crime family. The story, spanning 1945 to 1955, chronicles the family under the patriarch Vito Corleone, focusing on the transformation of Michael Corleone (Pacino) from reluctant family outsider to ruthless Mafia boss.",
+    "author": "Mario Puzo",
+    "year": 1969
   },
   {
     "id": "guards_guards",
-    "name": "Стража! Стража!",
+    "name": "Guards! Guards!",
     "rating": 400,
-    "preview": "юмористическое фэнтези английского писателя Терри Пратчетта, написано в 1989 году."
+    "preview": "Guards! Guards! is the eighth Discworld novel by Terry Pratchett, first published in 1989.[2] It is the first novel about the Ankh-Morpork City Watch. The first Discworld computer game borrowed heavily from Guards! Guards! in terms of plot.",
+    "author": "Terry Pratchett",
+    "year": 1989
   },
   {
     "id": "wyrd_sisters",
-    "name": "Вещие сестрички",
+    "name": "Wyrd Sisters",
     "rating": 200,
-    "preview": "юмористическое фэнтези английского писателя Терри Пратчетта, написано в 1988 году."
+    "preview": "Wyrd Sisters is Terry Pratchett's sixth Discworld novel, published in 1988, and re-introduces Granny Weatherwax of Equal Rites.",
+    "author": "Terry Pratchett",
+    "year": 1988
   },
   {
     "id": "men_at_arms",
-    "name": "К оружию! К оружию!",
+    "name": "Men at Arms",
     "rating": 700,
-    "preview": "юмористическое фэнтези английского писателя Терри Пратчетта, написано в 1993 году."
+    "preview": "A man-at-arms was a type of soldier of the High Medieval to Renaissance periods. He was almost always a professional warrior in the sense of being well-trained in the use of arms, who served as a fully armoured heavy cavalryman.[a] A man-at-arms could be a knight or nobleman, a member of a knight or nobleman's retinue or a mercenary in a company under a mercenary captain. Such men could serve for pay or through a feudal obligation. The terms knight and man-at-arms are often used interchangeably, but while all knights equipped for war certainly were men-at-arms, not all men-at-arms were knights.",
+    "author": "Evelyn Waugh",
+    "year": 1952
   },
   {
     "id": "master_i_margarita",
-    "name": "Мастер и Маргарита",
+    "name": "The Master and Margarita",
     "rating": 600,
-    "preview": "роман Михаила Афанасьевича Булгакова, работа над которым началась в конце 1920-х годов и продолжалась вплоть до смерти писателя. Роман относится к незавершённым произведениям; редактирование и сведение воедино черновых записей осуществляла после смерти мужа вдова писателя — Елена Сергеевна."
+    "preview": "The Master and Margarita (Russian: РњР°МЃСЃС‚РµСЂ Рё РњР°СЂРіР°СЂРёМЃС‚Р°) is a novel by Mikhail Bulgakov, written between 1928 and 1940, but unpublished in book form until 1967. The story concerns a visit by the devil to the fervently atheistic Soviet Union. Many critics consider it to be one of the best novels of the 20th century, as well as the foremost of Soviet satires.",
+    "author": "Mikhail Bulgakov",
+    "year": 1967
   },
   {
     "id": "prestuplenie_i_nakazanie",
-    "name": "Преступление и наказание",
+    "name": "Crime and Punishment",
     "rating": 800,
-    "preview": "социально-психологический и социально-философский роман Фёдора Михайловича Достоевского, над которым писатель работал в 1865—1866 годах. Впервые опубликован в 1866 году в журнале «Русский вестник» (№ 1, 2, 4, 6—8, 11, 12)"
+    "preview": "Crime and Punishment is a novel by the Russian author Fyodor Dostoevsky. It was first published in the literary journal The Russian Messenger in twelve monthly installments during 1866.[1] It was later published in a single volume. It is the second of Dostoyevsky's full-length novels following his return from 10 years of exile in Siberia. Crime and Punishment is considered the first great novel of his 'mature' period of writing.",
+    "author": "Fyodor Dostoyevsky",
+    "year": 1866
   },
   {
     "id": "le_petit_prince",
-    "name": "Маленький принц",
+    "name": "The Little Prince",
     "rating": 900,
-    "preview": "аллегорическая повесть, наиболее известное произведение Антуана де Сент-Экзюпери."
+    "preview": "The Little Prince (French: Le Petit Prince; French pronunciation: вЂ‹[lЙ™ pЙ™ti pКЃЙ›Мѓs]), first published in 1943, is a novella, the most famous work of French aristocrat, writer, poet, and pioneering aviator Antoine de Saint-ExupГ©ry (1900вЂ“1944).The novella is the fourth most-translated book in the world and was voted the best book of the 20th century in France. Translated into more than 250 languages and dialects (as well as Braille),[3][4] selling nearly two million copies annually with sales totaling over 140 million copies worldwide,[5] it has become one of the best-selling books ever published.",
+    "author": "Antoine de Saint-ExupГ©ry",
+    "year": 1943
   }
 ]

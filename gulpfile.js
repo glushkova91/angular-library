@@ -35,7 +35,7 @@ gulp.task("watch", function() {
 			console.log("*** File " + event.path + " was " + event.type + ", running tasks...");
 		});
 	gulp.watch('app/**/*.js', ['babel']);
-	gulp.watch('app/**/*.html', ['html']);
+	gulp.watch('app/**/*.{html,json,img}', ['not-compiled']);
 	gulp.watch('app/**/*.less', ['less']);
 });
 
