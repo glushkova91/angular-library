@@ -18,5 +18,14 @@ angular
                 query: {method: 'get', isArray: true}
             });
         }
+        function getBookDetail(){
+            return $resource('data/:bookId.json', {}, {
+                query: {
+                    method: 'GET',
+                    params: {bookId: 'phones'},
+                    isArray: true
+                }
+            });
+        }
     }
 ]);
