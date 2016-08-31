@@ -6,7 +6,8 @@ angular
     function($resource) {
         return {
             getBooksData,
-            getAuthorsData
+            getAuthorsData,
+            getBookDetail
         };
         function getBooksData(){
             return $resource('data/books.json', null, {
@@ -19,13 +20,7 @@ angular
             });
         }
         function getBookDetail(){
-            return $resource('data/:bookId.json', {}, {
-                query: {
-                    method: 'GET',
-                    params: {bookId: 'phones'},
-                    isArray: true
-                }
-            });
+            return $resource('data/:bookId.json', {});
         }
     }
 ]);

@@ -1,3 +1,6 @@
 'use strict';
 
-angular.module('core', ['core.data']);
+angular.module('core', [
+    'core.data',
+    'core.directives'
+]);

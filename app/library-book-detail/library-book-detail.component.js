@@ -7,13 +7,7 @@ angular
     controller: ['$routeParams', 'apiService',
         function libraryBookDetailController($routeParams, apiService) {
             var self = this;
-            self.phone = apiService.get({phoneId: $routeParams.phoneId}, function(phone) {
-                self.setImage(phone.images[0]);
-            });
-
-            self.setImage = function setImage(imageUrl) {
-                self.mainImageUrl = imageUrl;
-            };
+            self.book = apiService.getBookDetail().get({bookId: $routeParams.bookId});
         }
     ]
 });

@@ -5,5 +5,6 @@ angular.module('libraryApp', [
     'ngRoute',
     'topMenu',
     'libraryRating',
-    'libraryBookDetail'
+    'libraryBookDetail',
+    'librarySearch'
 ]);

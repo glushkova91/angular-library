@@ -1,4 +1,23 @@
 <div class="book-detail">
-    <div class="book-detail__title"></div>
+    <div class="book-detail__title">{{$ctrl.book.title}}</div>
+    <div class="book-detail__container clearfix">
+        <div class="book-detail__image">
+            <img ng-src="{{$ctrl.book.image}}" />
+        </div>
+        <div class="book-detail__info">
+            <div class="book-detail__author">
+                <span>Author:</span>
+                <span>{{$ctrl.book.author}}</span>
+            </div>
+            <div class="book-detail__year">
+                <span>Year:</span>
+                <span>{{$ctrl.book.year}}</span>
+            </div>
+            <div class="book-detail__summary">
+                <span>Summary:</span>
+                <span>{{$ctrl.book.preview}}</span>
+            </div>
+        </div>
+    </div>
 </div>
 

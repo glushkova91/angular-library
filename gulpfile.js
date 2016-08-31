@@ -50,7 +50,7 @@ gulp.task("babel", function() {
 
 gulp.task("not-compiled", function() {
 	return gulp
-		.src('app/**/*.{html,json,img}')
+		.src(['app/**/*.{html,json,png,gif,jpg}'])
 		.pipe(gulp.dest('build'));
 });
 
