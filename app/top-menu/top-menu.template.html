@@ -1,9 +1,9 @@
 
-<div class="top-menu">
+<div class="top-menu bg">
     <span class="top-menu__title">{{$ctrl.title}}</span>
     <menu>
-        <li ng-repeat="item in $ctrl.items">
-            <a ng-href="{{item.src}}">{{item.name}}</a>
+        <li class="top-menu__item" ng-repeat="item in $ctrl.items" >
+            <a ng-href="#{{item.src}}" ng-class="{active:item.src==$ctrl.url}">{{item.name}}</a>
         </li>
     </menu>
 </div>

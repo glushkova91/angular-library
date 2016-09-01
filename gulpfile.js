@@ -4,6 +4,7 @@ const plug = require("gulp-load-plugins")();
 const babel = require('gulp-babel');
 const less = require('gulp-less');
 const path = require('path');
+var notify = require('gulp-notify');
 
 var source = [
 		'app/**/*.js', 
@@ -36,7 +37,7 @@ gulp.task("watch", function() {
 		});
 	gulp.watch('app/**/*.js', ['babel']);
 	gulp.watch('app/**/*.{html,json,img}', ['not-compiled']);
-	gulp.watch('app/**/*.less', ['less']);
+	gulp.watch('app/style/**/*.less', ['less']);
 });
 
 gulp.task("babel", function() {
@@ -55,11 +56,13 @@ gulp.task("not-compiled", function() {
 });
 
 gulp.task('less', function () {
-	return gulp.src('app/**/*.less')
+	return gulp.src('app/style/*.less')
 		.pipe(less({
 			paths: [ path.join(__dirname, 'less', 'includes') ]
-		}))
-		.pipe(gulp.dest('build'));
+		}).on("error", notify.onError(function (error) {
+			return "Error: " + error.message;
+		})))
+		.pipe(gulp.dest('build/style'));
 });
 
 gulp.task("build", ["babel", "not-compiled", 'less']);

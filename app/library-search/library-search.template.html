@@ -3,6 +3,7 @@
     <div class="rating__title">Search</div>
     <div class="rating__controls">
         <input ng-model="$ctrl.query" class="rating__input">
+        <div class="result-count" ng-if="$ctrl.query">({{filtered.length}})</div>
         Sort by:
         <select ng-model="$ctrl.sort">
             <option value="-rating">rating</option>
@@ -11,11 +12,14 @@
         </select>
     </div>
     <ul class="rating__list">
-        <li ng-repeat="book in $ctrl.books | filter:{name: $ctrl.query} | orderBy: $ctrl.sort">
+        <li ng-repeat="book in $ctrl.books | filter:{name: $ctrl.query} | orderBy: $ctrl.sort as filtered">
             <a ng-href="#/{{book.id}}">{{book.name}}  {{book.rating}}</a>
             <div class="rating__details">
-                <span class="details-trigger" showDetail target="book">Show details</span>
-                <div ng-class="{open:book.openDetails}"></div>
+                <span class="details-trigger" ng-click="book.openDetails = !book.openDetails">Show details</span>
+                <div ng-class="{open:book.openDetails}" class="rating__details-block">
+                    <div>{{book.author}}, <em>{{book.year}}</em></div>
+                    <div>{{ book.preview}}</div>
+                </div>
             </div>
         </li>
     </ul>

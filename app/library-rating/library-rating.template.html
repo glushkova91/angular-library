@@ -1,19 +1,19 @@
 
 <div class="rating">
-    <div class="rating__title">Best 10 Books & Authors</div>
+    <div class="rating__title title">Best 10 Books & Authors</div>
     <div class="rating__container clearfix">
-        <div class="rating__books">
-            <div class="rating__subtitle">Book's rating</div>
-            <ul>
-                <li ng-repeat="book in $ctrl.books | orderBy: '-rating'">
+        <div class="rating__books rating__container-item col-md-6">
+            <div class="rating__subtitle subtitle">Book's rating</div>
+            <ul class="rating__container-list">
+                <li ng-repeat="book in $ctrl.books | orderBy: '-rating' | limitTo : $ctrl.limit" ng-class="{first:$index==0, second:$index==1}">
                     <a ng-href="#/{{book.id}}">{{book.name}}  {{book.rating}}</a>
                 </li>
             </ul>
         </div>
-        <div class="rating__authors">
-            <div class="rating__subtitle">Author's rating</div>
-            <ul>
-                <li ng-repeat="author in $ctrl.authors | orderBy: '-rating'">
+        <div class="rating__authors rating__container-item col-md-6">
+            <div class="rating__subtitle subtitle">Author's rating</div>
+            <ul class="rating__container-list">
+                <li ng-repeat="author in $ctrl.authors | orderBy: '-rating' | limitTo : $ctrl.limit" ng-class="{first:$index==0, second:$index==1}">
                     <span>{{author.name}}  {{author.rating}}</span>
                 </li>
             </ul>

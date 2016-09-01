@@ -1,0 +1,32 @@
+@import "variables";
+
+.top-menu{
+  padding: 0 15px;
+  border-bottom: 1px solid @borderColor;
+
+  .top-menu__title{
+    vertical-align: middle;
+    padding: 0 10px 0 0;
+    font-size: 1.3em;
+  }
+
+  menu{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: middle;
+  }
+  .top-menu__item{
+    float: left;
+    a{
+      padding: 10px 10px;
+      display: inline-block;
+
+      &:hover,&:focus, &.active{
+        text-decoration: none;
+        background-color: @bgHover;
+      }
+    }
+  }
+}

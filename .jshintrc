@@ -28,5 +28,6 @@
 	"browser": true,
 	"node": true,
     "expr": false,
-    "validthis": true
+    "validthis": true,
+  	"esversion": 6
 }
