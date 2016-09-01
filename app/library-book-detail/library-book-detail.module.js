@@ -1,3 +1,6 @@
 'use strict';
 
-angular.module('libraryBookDetail', []);
+angular.module('libraryBookDetail', [
+    'ngRoute',
+    'core.data'
+]);

@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('libraryRating', []);
+angular.module('libraryRating', ['core.data']);

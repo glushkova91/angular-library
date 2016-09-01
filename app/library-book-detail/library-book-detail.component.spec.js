@@ -21,10 +21,15 @@ describe('libraryBookDetail', function() {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('data/harry_potter.json').respond(bookData);
 
-      $routeParams.book = 'harry_potter';
+      $routeParams.bookId = 'harry_potter';
 
       ctrl = $componentController('libraryBookDetail');
     }));
+
+    afterEach(function () {
+      $httpBackend.verifyNoOutstandingExpectation();
+      $httpBackend.verifyNoOutstandingRequest();
+    });
 
     it('should fetch the book details', function() {
 
