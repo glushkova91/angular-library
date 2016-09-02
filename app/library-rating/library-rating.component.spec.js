@@ -23,31 +23,37 @@ describe('libraryRating', function() {
     });
 
 
-    beforeEach(inject(function($componentController, $injector) {
+    beforeEach(inject(function($componentController, $injector, _$httpBackend_) {
       //$httpBackend = _$httpBackend_;
-      $httpBackend = $injector.get('$httpBackend');
+      //$httpBackend = $injector.get('$httpBackend');
+      $httpBackend = _$httpBackend_;
+      $httpBackend.expectGET('data/books.json')
+          .respond(booksData);
+      $httpBackend.expectGET('data/authors.json')
+          .respond(authorsData);
+
       ctrl = $componentController('libraryRating');
     }));
 
-    it('should create a `books` property with 2 books fetched with `$http`', function() {
-      $httpBackend.expectGET('data/books.json')
-          .respond(booksData);
+    afterEach(function () {
+      $httpBackend.verifyNoOutstandingExpectation();
+      $httpBackend.verifyNoOutstandingRequest();
+    });
+
+    it('should create a `books` and `authors` properties', function() {
 
       expect(ctrl.books).toEqual([]);
+      expect(ctrl.authors).toEqual([]);
 
       $httpBackend.flush();
       expect(ctrl.books).toEqual(booksData);
+      expect(ctrl.authors).toEqual(authorsData);
     });
 
-    //it('should create a `books` property with 2 authors fetched with `$http`', function() {
-    //  $httpBackend.expectGET('data/authors.json')
-    //      .respond(authorsData);
-    //
-    //  expect(ctrl.authors).toEqual([]);
-    //
-    //  $httpBackend.flush();
-    //  expect(ctrl.authors).toEqual(authorsData);
-    //});
+    it('should set a default value for the `limit` property', function() {
+      $httpBackend.flush();
+      expect(ctrl.limit).toBe(10);
+    });
   });
 
 });

@@ -9,9 +9,7 @@ angular
 
             this.books = apiService.getBooksData().query();
             this.sort = '-rating';
-            //self.authors = apiService.getAuthorsData().query();
 
-            this.showDetailsClick = (book)=>book.opened = !book.opened;
             this.books.forEach((book)=>book.openDetails = false);
         }
 

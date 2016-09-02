@@ -1,6 +1,51 @@
-.rating__details-block{
+@import "variables";
+.search__details{
   display: none;
-  &.open{
+  .open &{
     display: block;
+  }
+}
+.search__sorting{
+  width: 146px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.search__input{
+  width: calc(~"100% - 150px");
+  display: inline-block;
+  vertical-align: bottom;
+  .result-count{
+    position: absolute;
+  }
+}
+.search__controls{
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+
+.search__list{
+  list-style: none;
+  padding: 0;
+  li{
+    padding: 6px 13px;
+    border-bottom: 1px solid #EDEDED;
+  }
+}
+.search__list-link{
+  color: @main;
+}
+.details-trigger{
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+
+  &:before{
+    content:"\25B6";
+    display: inline-block;
+
+    .open &{
+      content:"\25BC";
+    }
   }
 }

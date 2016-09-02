@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('librarySearch', []);
+angular.module('librarySearch', ['core.data']);

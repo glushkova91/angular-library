@@ -1,25 +1,30 @@
 
 <div class="search">
-    <div class="rating__title">Search</div>
-    <div class="rating__controls">
-        <input ng-model="$ctrl.query" class="rating__input">
-        <div class="result-count" ng-if="$ctrl.query">({{filtered.length}})</div>
-        Sort by:
-        <select ng-model="$ctrl.sort">
-            <option value="-rating">rating</option>
-            <option value="name">alphabet: A-Z</option>
-            <option value="-name">alphabet: Z-A</option>
-        </select>
+    <div class="search__title title">Find your book</div>
+
+    <div class="search__controls">
+        <form class="form-search clearfix">
+            <div class="search__input">
+                <input ng-model="$ctrl.query" class="form-control">
+                <div class="result-count" ng-if="$ctrl.query">({{filtered.length}})</div>
+            </div>
+            <div class="search__sorting">
+                Sort by:
+                <select ng-model="$ctrl.sort">
+                    <option value="-rating">rating</option>
+                    <option value="name">alphabet: A-Z</option>
+                    <option value="-name">alphabet: Z-A</option>
+                </select>
+            </div>
+        </form>
     </div>
-    <ul class="rating__list">
-        <li ng-repeat="book in $ctrl.books | filter:{name: $ctrl.query} | orderBy: $ctrl.sort as filtered">
-            <a ng-href="#/{{book.id}}">{{book.name}}  {{book.rating}}</a>
-            <div class="rating__details">
-                <span class="details-trigger" ng-click="book.openDetails = !book.openDetails">Show details</span>
-                <div ng-class="{open:book.openDetails}" class="rating__details-block">
-                    <div>{{book.author}}, <em>{{book.year}}</em></div>
-                    <div>{{ book.preview}}</div>
-                </div>
+    <ul class="search__list">
+        <li ng-repeat="book in $ctrl.books | filter:{name: $ctrl.query} | orderBy: $ctrl.sort as filtered" ng-class="{open:book.openDetails}">
+            <a ng-href="#/{{book.id}}" class="search__list-link">{{book.name}}  {{book.rating}}</a>
+            <span class="details-trigger" ng-click="book.openDetails = !book.openDetails"></span>
+            <div class="search__details">
+                <div>{{book.author}}, <em>{{book.year}}</em></div>
+                <div>{{ book.preview}}</div>
             </div>
         </li>
     </ul>

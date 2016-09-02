@@ -8,7 +8,8 @@ var notify = require('gulp-notify');
 
 var source = [
 		'app/**/*.js', 
-		"!app/vendor/**/*.*"
+		"!app/vendor/**/*.*",
+		"!app/**/*.spec.js"
 	];
 
 gulp.task('webserver', function() {
@@ -17,7 +18,7 @@ gulp.task('webserver', function() {
 		.pipe(plug.webserver({
 			livereload: true,							// livereload
 			directoryListing: true,
-			open: "http://localhost:8000/index.html"	// index.html
+			open: "http://localhost:8000/index.html#/search"	// index.html
 	}));
 });
 
@@ -66,4 +67,4 @@ gulp.task('less', function () {
 });
 
 gulp.task("build", ["babel", "not-compiled", 'less']);
-gulp.task("start", ['build', "webserver", 'watch']);
+gulp.task("start", ['build', 'watch', "webserver"]);
